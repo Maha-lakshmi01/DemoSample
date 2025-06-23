@@ -1,0 +1,17 @@
+name : python
+on:
+   workflow_dispatch:
+   jobs: 
+     test-architecture:
+      runs-on: macos-13
+   strategy:
+   matrix:
+    python-version:[3.11,3.12]
+    architecture:[universal2,arm64, x64]
+   steps:
+     -name:checkout repository
+   uses: actions/setup-python@v5
+    -name:Set up Python
+    uses:actions/setup-python@v5
+     with:
+          python-version:3.12
