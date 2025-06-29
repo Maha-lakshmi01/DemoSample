@@ -8,10 +8,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '14'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile # optional, --immutable
-      - run: yarn test
+         token: ${{ secrets.GH_DOTCOM_TOKEN }}
+         node-version: 20
             
           
              
