@@ -6,11 +6,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
        - uses: actions/checkout@v4
-       - uses: actions/setup-python@v5
-         id: cp313
+       - uses: actions/setup-node@v4
          with:
-          python-version: "3.13"
-       - run: pipx run --python '${{ steps.cp313.outputs.python-path }}' nox --version
+          node-version: 18
+       - run: npm ci
+       - run: npm test
             
           
              
