@@ -1,4 +1,4 @@
-name: testing
+name: gralpy testing
 on:
   workflow_dispatch
 jobs:
