@@ -1,4 +1,4 @@
-name: gralpy testing
+name: cache testing
 on:
   workflow_dispatch
 jobs:
@@ -11,8 +11,8 @@ jobs:
         - name: Set up python
           uses: actions/setup-python@v5
           with:
-             python-version: 'pypy-3.10'
-             architecture: 'x-64'
+             python-version: '3.13'
+             cache: 'pipenv'
              
 
              
